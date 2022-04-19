@@ -4,6 +4,7 @@ pagination:
     size: 1
     alias: tag
 permalink: /{{ tag }}/
+layout: post.njk
 ---
 # {{ tag | capitalize }}
 
