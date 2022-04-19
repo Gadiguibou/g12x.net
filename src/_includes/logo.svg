@@ -1,13 +1,42 @@
-<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
- <title>Website logo</title>
- <g transform="matrix(1.3107 0 0 1.3107 -62.05 -40.877)" stroke-linecap="round">
-  <g fill-opacity="0" stroke-width="37.629">
-   <path d="m268.54 130.56a99.315 99.315 0 0 1 31.26 14.577" stroke="#3d00ff"/>
-   <path d="m185.87 145.14a99.315 99.315 0 0 1 82.67-14.577" stroke="#01e4ff"/>
-   <path d="m193.18 312.5a99.315 99.315 0 0 1-49.563-81.677 99.315 99.315 0 0 1 42.256-85.686" stroke="#17225d"/>
-   <path d="m306.68 302.57a99.315 99.315 0 0 1-113.5 9.9296" stroke="#6783ea"/>
-   <path d="m341.78 235.15a99.315 99.315 0 0 1-35.099 67.424" stroke="#3d00ff"/>
+<svg
+   version="1.1"
+   viewBox="0 0 512 512"
+   xmlns="http://www.w3.org/2000/svg">
+  <title>Website logo</title>
+  <circle
+     cx="256"
+     cy="256"
+     fill="#ffffff"
+     id="circle1926"
+     r="256" />
+  <g
+     fill="none"
+     stroke-linecap="round"
+     stroke-width="70"
+     id="g1938">
+    <path
+       d="m 300.74272,90.522874 a 171.64353,171.64353 0 0 1 54.02586,25.193046"
+       stroke="#3d00ff"
+       id="path1928" />
+    <path
+       d="M 157.86631,115.72111 A 171.64524,171.64353 0 0 1 300.74272,90.528064"
+       stroke="#01e4ff"
+       id="path1930" />
+    <path
+       d="M 366.65907,387.80331 A 171.64353,171.64353 0 0 1 170.49999,404.96436"
+       stroke="#6783ea"
+       id="path1934" />
+    <path
+       d="M 427.32152,271.28307 A 171.64353,171.64353 0 0 1 366.66081,387.81022"
+       stroke="#3d00ff"
+       id="path1936" />
+    <path
+       d="M 170.49999,404.96505 A 171.64353,171.64353 0 0 1 84.841564,263.8048 171.64353,171.64353 0 0 1 157.8715,115.71592"
+       stroke="#17225d"
+       id="path1932" />
+    <path
+       d="m 277.72212,272.99405 149.58557,-1.71292"
+       stroke="#3d00ff"
+       id="path1940" />
   </g>
-  <path d="m255.22 236.14 86.552-0.99111" stroke="#3d00ff" stroke-width="37.629"/>
- </g>
 </svg>
