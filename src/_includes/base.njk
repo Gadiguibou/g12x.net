@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    {% set styles %}
+      {% include "base.css" %}
+    {% endset %}
+    <style>
+      {{ styles | cssmin | safe }}
+    </style>
+  </head>
+  <body>
+  <header style="display: flex; justify-content: space-between; align-items: center; min-height: 4rem; padding: 1rem 2rem; border-bottom: 1px solid black;">
+    <div style="display: flex; align-items: center;">
+      <a style="display: block; max-width: 3rem;" href="/">
+      {% include "logo.svg" %}
+      </a>
+      <h2 style="margin-top: 0; line-height: 1;">Gabriel Lacroix</h2>
+    </div>
+  </header>
+    {{ content | safe }}
+  </body>
+</html>
+

@@ -1,0 +1,54 @@
+/*
+  1. Prevent elements from overflowing their containers when using padding or borders
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margins
+*/
+* {
+    margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+/*
+  3. Make media elements behave like blocks instead of inline elements and prevent them from
+  overflowing their containers
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  4. Prevent text from overflowing its container when no soft-wrap possibilities exist
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  Source for some of these: https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+/*
+  5. Typography
+*/
+body {
+  line-height: 1.5; 
+  font-size: clamp(1rem, 1rem + 0.2vw,1.2rem);
+  font-family: system-ui, sans-serif;
+}
+
+/* p, h1, h2, h3, h4, h5, h6, ul, ol, dl, blockquote, pre {
+  margin-top: 1em;
+} */
+
+.vertical-space-between > * + * {
+  margin-top: 1em;
+}

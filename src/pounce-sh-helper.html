@@ -1,0 +1,54 @@
+---
+layout: post.njk
+title: Pounce.sh Helper
+---
+
+<h2 id="turn-counter-header">Turn #1</h2>
+<table></table>
+<button id="next-turn-button">Next Turn</button>
+<script>
+  let turnCounter = 1;
+
+  const nextTurnButton = document.querySelector("#next-turn-button");
+  const turnCounterHeader = document.querySelector("#turn-counter-header");
+  nextTurnButton.addEventListener("click", () => {
+    turnCounter++;
+    turnCounterHeader.innerText = `Turn #${turnCounter}`;
+  });
+
+  const table = document.querySelector("table");
+  
+  const columnHeaderRow = document.createElement("tr");
+  table.appendChild(columnHeaderRow);
+  columnHeaderRow.appendChild(document.createElement("th"));
+  for (let i = 0; i < 8; i++) {
+    const columnHeader = document.createElement("th");
+    columnHeader.innerText = `${i + 1}`;
+    columnHeaderRow.appendChild(columnHeader);
+  }
+
+  let cells = [];
+  for (let i = 0; i < 8; i++) {
+    cells[i] = [];
+    const row = document.createElement("tr");
+    table.appendChild(row);
+    
+    const rowHeader = document.createElement("th");
+    rowHeader.innerText = `${i + 1}`;
+    row.appendChild(rowHeader);
+
+    for (let j = 0; j < 8; j++) {
+      cells[i][j] = {
+        lastTurn: null,
+        elem: document.createElement("td")
+      };
+      cells[i][j].elem.innerText = ` `;
+      cells[i][j].elem.addEventListener("click", () => {
+        cells[i][j].lastTurn = turnCounter;
+        cells[i][j].elem.innerText = cells[i][j].lastTurn !== null ? `${cells[i][j].lastTurn}` : ` `;
+      });
+      cells[i][j].elem.style = "width: 2em; height: 2em; border: 1px solid black;";
+      row.appendChild(cells[i][j].elem);
+    }
+  }
+</script>
